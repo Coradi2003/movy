@@ -16,7 +16,7 @@ const Header = () => {
         <img src={movyLogo} alt="Movy Soluções Financeira" className="h-10 md:h-12 w-auto" />
         
         <nav className="hidden md:flex items-center gap-8">
-          {["Serviços", "Benefícios", "Sobre", "Depoimentos"].map((item) => (
+          {["Serviços", "Benefícios", "Sobre"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`}
